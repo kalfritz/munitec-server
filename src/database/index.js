@@ -1,11 +1,11 @@
 import Sequelize from 'sequelize';
 
-import School from '../app/models/School';
-import Class from '../app/models/Class';
-import Student from '../app/models/Student';
-import Subject from '../app/models/Subject';
-import Score from '../app/models/Score';
-import Attendance from '../app/models/Attendance';
+import School from '../models/School';
+import Class from '../models/Class';
+import Student from '../models/Student';
+import Subject from '../models/Subject';
+import Score from '../models/Score';
+import Attendance from '../models/Attendance';
 
 import databaseConfig from '../config/database';
 

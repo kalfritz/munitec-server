@@ -19,6 +19,14 @@ class Student extends Model {
       foreignKey: 'class_id',
       as: 'classes',
     });
+    this.hasMany(models.Attendance, {
+      foreignKey: 'student_id',
+      as: 'attendances',
+    });
+    this.hasOne(models.Score, {
+      foreignKey: 'student_id',
+      as: 'scores',
+    });
   }
 }
 export default Student;

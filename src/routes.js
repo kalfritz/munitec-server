@@ -10,13 +10,13 @@ import ScoreController from './controllers/ScoreController';
 const routes = new Router();
 
 routes.get('/schools', SchoolController.index);
-routes.get('/classes/:schoolId', ClassController.index);
-routes.get('/students/:classId', StudentController.index);
-routes.get('/subjects/:classId', SubjectController.index);
+routes.get('/classes/:school_id', ClassController.index);
+routes.get('/students/:class_id', StudentController.index);
+routes.get('/subjects/:class_id', SubjectController.index);
 
-routes.post('/attendances/:subjectId', AttendanceController.store);
+routes.post('/attendances/:subject_id', AttendanceController.store);
 routes.post(
-  '/students/:studentId/subjects/:subjectId/score',
+  '/students/:student_id/subjects/:subject_id/scores',
   ScoreController.store
 );
 

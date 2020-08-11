@@ -23,27 +23,23 @@ module.exports = {
         onDelete: 'SET NULL',
         allowNull: false,
       },
-      firstBimester: {
+      first_bemester: {
         type: Sequelize.FLOAT,
-        allowNull: false,
         min: 0,
         max: 10,
       },
-      secondBimester: {
+      second_bemester: {
         type: Sequelize.FLOAT,
-        allowNull: false,
         min: 0,
         max: 10,
       },
-      thirdBimester: {
+      third_bemester: {
         type: Sequelize.FLOAT,
-        allowNull: false,
         min: 0,
         max: 10,
       },
-      fourthBimester: {
+      fourth_bemester: {
         type: Sequelize.FLOAT,
-        allowNull: false,
         min: 0,
         max: 10,
       },
