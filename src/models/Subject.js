@@ -5,6 +5,7 @@ class Subject extends Model {
     super.init(
       {
         name: Sequelize.STRING,
+        image: Sequelize.STRING(100000),
       },
       {
         sequelize,
